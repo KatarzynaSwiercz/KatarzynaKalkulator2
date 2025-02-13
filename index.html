@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+    
+<head>
+  <title>Prosty Kalkulator</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+    
+<body>
+    <section class ="calculator">
+
+        <h1>Kalkulator dla Pana Karola</h1>
+        
+        <div class="calculator-box">
+            <input readonly class="view" id="view">
+            <div class="buttons">
+            <button onclick="clearview('')" class="clear-button">C</button>
+            <button onclick="appendToview('+')">+</button>
+            <button onclick="appendToview('-')">-</button>
+            <button onclick="appendToview('.')">.</button>
+            <button onclick="appendToview('1')">1</button>
+            <button onclick="appendToview('2')">2</button>
+            <button onclick="appendToview('3')">3</button>
+            <button onclick="appendToview('*')">*</button>
+            <button onclick="appendToview('4')">4</button>
+            <button onclick="appendToview('5')">5</button>
+            <button onclick="appendToview('6')">6</button>
+            <button onclick="appendToview('/')">/</button>
+            <button onclick="appendToview('7')">7</button>
+            <button onclick="appendToview('8')">8</button>
+            <button onclick="appendToview('9')">9</button>
+            <button onclick="appendToview('0')">0</button>
+            <button onclick="calculate('')" class="calculate-button">=</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body> 
+    
+    
